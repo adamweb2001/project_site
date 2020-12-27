@@ -14,7 +14,12 @@
       version    : 'v9.0'
     });
       
-    FB.AppEvents.logPageView();   
+    FB.AppEvents.logPageView();  
+    
+    FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/',
+}, function(response){});
       
   };
 
