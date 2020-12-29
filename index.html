@@ -1,25 +1,39 @@
-<html>
+<head>
+  <meta property="fb:use_automatic_ad_placement" content="false">
+</head>
+<body>
+  <article>
+    <header></header>
 
+    <!-- Article body goes here -->
 
+    <!-- Body text for your article -->
+    <p> Article content </p> 
 
-<figure class="op-ad">
-  <iframe height="250" style="border:0;margin:0;padding:0;" width="300">
-  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-  <script>
-      var googletag = googletag || {};
-      googletag.cmd = googletag.cmd || [];
-  </script>
+    <!-- A video within your article -->
+    <figure>
+      <video>
+        <source src="http://mydomain.com/path/to/video.mp4" type="video/mp4" />
+      </video>
+    </figure>
 
-  <script>
-    googletag.cmd.push(function() {
-      googletag.defineSlot('/[NETWORK_ID]/[AD_UNIT]', [300, 250], 'div-gpt-ad-12345').addService(googletag.pubads());
-      googletag.enableServices();
-    });
-  </script>
-  <div id='div-gpt-ad-12345' style='height:250px; width:300px;'>
-    <script>
-      googletag.cmd.push(function() { googletag.display('div-gpt-ad-12345'); });
-    </script>
-  </div>
-  </iframe>
-</figure>
+    <!-- An ad within your article -->
+    <figure class="op-ad">
+      <iframe src="https://www.adserver.com/ss;adtype=banner320x50" height="50" width="320"></iframe>
+    </figure>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <!-- Another ad within your article -->
+    <figure class="op-ad">
+      <iframe src="https://www.adserver.com/ss;adtype=banner320x50" height="50" width="320"></iframe>
+    </figure>
+
+  </article>
+</body>
