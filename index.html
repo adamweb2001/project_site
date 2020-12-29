@@ -1,39 +1,9 @@
-<head>
-  <meta property="fb:use_automatic_ad_placement" content="false">
-</head>
-<body>
-  <article>
-    <header></header>
 
-    <!-- Article body goes here -->
-
-    <!-- Body text for your article -->
-    <p> Article content </p> 
-
-    <!-- A video within your article -->
-    <figure>
-      <video>
-        <source src="http://mydomain.com/path/to/video.mp4" type="video/mp4" />
-      </video>
-    </figure>
-
-    <!-- An ad within your article -->
-    <figure class="op-ad">
-      <iframe src="https://www.adserver.com/ss;adtype=banner320x50" height="50" width="320"></iframe>
-    </figure>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <!-- Another ad within your article -->
-    <figure class="op-ad">
-      <iframe src="https://www.adserver.com/ss;adtype=banner320x50" height="50" width="320"></iframe>
-    </figure>
-
-  </article>
-</body>
+<html>
+  
+  
+var obj = {method: 'pay',
+           action: 'create_subscription',
+           product: 'https://sfarbot.me/pages/og_testing_sfar_basic_subscription.html'
+};
+ FB.ui(obj, response => (console.log('payment subscription response: ' + JSON.stringify(response))));
