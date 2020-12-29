@@ -4,7 +4,9 @@
   
     
     
+
 <script>
+  
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '394341341830695',
@@ -13,13 +15,7 @@
       version    : 'V9.0'
     });
       
-    FB.AppEvents.logPageView();  
-    
-    var obj = {method: 'pay',
-           action: 'create_subscription',
-           product: 'https://sfarbot.me/pages/og_testing_sfar_basic_subscription.html'
-};
- FB.ui(obj, response => (console.log('payment subscription response: ' + JSON.stringify(response))));
+    FB.AppEvents.logPageView();   
       
   };
 
@@ -30,8 +26,8 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+  
 </script>
-    
   
 
     
