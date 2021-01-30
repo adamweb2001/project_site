@@ -10,7 +10,7 @@
   <body>
 
     <h2>Purchase a prodi:</h2>
-    <button id="pay">Buy Product</button>
+    <button id="pay">Buy Pro</button>
     
    
 
@@ -31,26 +31,15 @@
              href: 'https://www.cnbc.com/make-it/',
           };
 
-          FB.ui(obj, function(response) {
-    if (response && !response.error_message) {
-      alert('Posting completed.');
-    } else {
-      alert('Error while posting.');
-    }
+          FB.ui(obj, function(response) {}
             });
         }
 
         document.getElementById('pay').onclick = function() {buy()};
       };
 
-      // Load the SDK Asynchronously
-      (function(d){
-        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-        if (d.getElementById(id)) { return; }
-        js = d.createElement('script'); js.id = id; js.async = true;
-        js.src = "https://connect.facebook.net/en_US/all.js";
-        ref.parentNode.insertBefore(js, ref);
-      }(document));
+      
+      
     </script>
   </body>
 </html>
