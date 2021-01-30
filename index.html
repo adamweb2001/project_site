@@ -31,8 +31,12 @@
              href: 'https://www.cnbc.com/make-it/',
           };
 
-          FB.ui(obj, function(data) {
-              console.log(data);
+          FB.ui(obj, function(response) {
+    if (response && !response.error_message) {
+      alert('Posting completed.');
+    } else {
+      alert('Error while posting.');
+    }
             });
         }
 
