@@ -12,10 +12,10 @@
     <h2>Purchase a prodi:</h2>
     <button id="pay">Buy Product</button>
     
-    <div class="returndata" id="output"></div>
+   
 
 
-    <script type="text/javascript">
+    <script>
       
       window.fbAsyncInit = function() {
         FB.init({
@@ -27,9 +27,8 @@
 
         function buy() {
           var obj = {
-            method: 'pay',
-            action: 'purchaseitem',
-            product: 'http://www.friendsmash.com/og/coins.html'
+            method: 'share',
+             href: 'https://developers.facebook.com/docs/',
           };
 
           FB.ui(obj, function(data) {
