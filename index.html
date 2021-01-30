@@ -9,9 +9,8 @@
   <body>
 
     <h2>Purchase a product:</h2>
-   
-    
-   
+    <button id="pay">Buy Product</button>
+    <div class="returndata" id="output"></div>
 
 
     <script type="text/javascript">
@@ -23,20 +22,29 @@
           xfbml      : true
         });
 
-        
-          FB.ui({
+        function buy() {
+          var obj = {
             method: 'pay',
             action: 'purchaseitem',
-            product: 'https://www.cnbc.com/make-it/'
-          }, function(data) {
-              console.log(data)
-            });
-        
+            product: 'YOUR_PRODUCT_URL'
+          };
 
-       
+          FB.ui(obj, function(data) {
+              console.log(data);
+            });
+        }
+
+        document.getElementById('pay').onclick = function() {buy()};
       };
 
-     
+      // Load the SDK Asynchronously
+      (function(d){
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement('script'); js.id = id; js.async = true;
+        js.src = "https://connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+      }(document));
     </script>
   </body>
 </html>
