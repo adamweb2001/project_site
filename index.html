@@ -12,10 +12,7 @@
       
     FB.AppEvents.logPageView();  
     
-    <fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">fb
-</fb:login-button>
+  
       
   };
 
@@ -26,6 +23,13 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+  
+  
+    <fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">fb
+</fb:login-button>
+  
 </script>
   
   
