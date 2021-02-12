@@ -10,7 +10,12 @@
       version    : 'v.9.0'
     });
       
-    FB.AppEvents.logPageView();   
+    FB.AppEvents.logPageView();  
+    
+    <fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">fb
+</fb:login-button>
       
   };
 
@@ -25,9 +30,6 @@
   
   
   
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">fb
-</fb:login-button>
+
   
 </body> 
