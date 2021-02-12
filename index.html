@@ -1,8 +1,26 @@
 <body>
 
   
-  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=6395-20&marketplace=amazon&amp;region=US&placement=B08MCBBLBK&asins=B08MCBBLBK&linkId=9812755815353e3d09fed45fc96ae664&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
-</iframe>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '769490393657757',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'V.9'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   
 </body> 
